@@ -67,7 +67,6 @@ class MainActivity extends AppCompatActivity implements View.OnClickListener {
                 Toast.makeText(MainActivity.this, "An error occurred during networking", Toast.LENGTH_SHORT).show();
             }
         });
-
 }
 
     @Override
