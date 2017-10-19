@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.vi199.example.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/colorSearchBar"
+        >
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:longClickable="false"
+            android:layout_margin="8dp"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:background="@drawable/rectangle_rounded_all"
+            android:inputType="text" />
+        <ImageButton
+            android:id="@+id/image_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_name"
+            android:background="@color/colorSearchBar"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:id="@+id/posts_recycle_view"
+        android:layout_weight="10"
+        android:layout_marginTop="5dp"
+        android:clickable="false"
+        android:keepScreenOn="true"/>
+</LinearLayout>
